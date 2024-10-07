@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint"content="width=device-width,initial-scale=1.0">
+        <style>
+            body{
+                background-color: whitesmoke;
+                margin: 10px;
+                align-items: center;
+                justify-content: center;
+            }
+            form{
+                background-color:bisque;
+                padding: 20px;
+                border-radius: 8px;
+                width: 300px;
+                text-align: center;
+            }
+            input{
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            button{
+                background-color: darkmagenta;
+                color: bisque;
+                padding: 10px;
+                margin: 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 100%;
+            }
+            button[type="reset"]{
+                background-color: #4436;
+
+
+            }
+            button:hover{
+                background-color:coral;
+            }
+            a{
+                color: #4436;
+            }
+            a:hover{
+                color:firebrick;
+                text-decoration: underline;
+            }
+        </style>
+        <title>
+            Login Form
+        </title>
+
+    </head>
+    <body>
+        <form name="login"method="post"action="login.php">
+            <h1>
+                LOGIN FORM
+            </h1>
+            Name:<input type="text"
+            name="username"
+            value="Enter username" />
+            <br/>
+            Password:<input type="text"
+            name="password"
+            value=""/>
+            <br/>
+            <button type="submit"name="submit"value="">
+                🕸LOGIN
+            </button>
+            <button type="reset"name="reset"value="">
+                PASSWORD
+            </button>
+            <br/>
+            <a href="reset password">Forgot password?</a>
+        </form>
+    </body>
+</html>
